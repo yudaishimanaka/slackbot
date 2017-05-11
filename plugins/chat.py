@@ -24,4 +24,4 @@ def reply_kawaii(message):
 
 @default_reply()
 def default_reply(message):
-    message.reply("私、わかるよ！！！")
+    message.reply("あいきゃんこと小林愛香だよっ!?、よろしくねっ!!")
