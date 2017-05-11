@@ -1,5 +1,4 @@
 from slackbot.bot import respond_to, listen_to, default_reply
-import pymysql.cursors
 
 
 @respond_to('task')
