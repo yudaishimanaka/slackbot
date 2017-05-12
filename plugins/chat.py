@@ -1,12 +1,6 @@
 from slackbot.bot import respond_to, listen_to, default_reply
 
 
-@respond_to('task')
-@listen_to('task')
-def reply_task_list(message):
-    message.reply("タスクリストを表示しますね！！！")
-
-
 @respond_to('愛こそすべて')
 @listen_to('愛こそすべて')
 def reply_guiltykiss(message):
