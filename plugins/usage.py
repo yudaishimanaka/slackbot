@@ -6,6 +6,7 @@ from slackbot.bot import respond_to, listen_to
 def usage(message):
     msg = "使用法だよっ!!\n" \
           "*コマンド一覧*\n" \
+          ">タスク一覧:*task*\n" \
           ">タスクを開く:*open [task_title]/[overview]/[task_level]/[date]*\n" \
           ">タスクを閉じる:*close [task_title]*\n" \
           "*オプションの説明*\n" \
