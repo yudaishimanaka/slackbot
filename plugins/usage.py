@@ -1,8 +1,8 @@
 from slackbot.bot import respond_to, listen_to
 
 
-@respond_to('usage')
-@listen_to('usage')
+@respond_to(r'^usage\s*$')
+@listen_to(r'^usage\s*$')
 def usage(message):
     msg = "使用法だよっ!!\n" \
           "*コマンド一覧*\n" \
