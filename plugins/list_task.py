@@ -20,6 +20,8 @@ def task_list(message):
         cursor.execute(sql)
         results = cursor.fetchall()
         for value in results:
-            msg += (">" + str(value[1]) + "(" + str(value[4]) + "まで)\n")
+            msg += (">*" + str(value[1]) + "* (" + str(value[4]) + "まで)\n")
 
         message.reply(str(msg))
+
+connection.close()
