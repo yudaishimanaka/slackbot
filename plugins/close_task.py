@@ -22,3 +22,5 @@ def close_task(message, title):
             cursor.execute("UPDATE Task SET status ='off' WHERE username ='yudai' AND title ='" + title + "'")
             connection.commit()
             message.reply("タスクを閉じたよ!!")
+
+connection.close()
