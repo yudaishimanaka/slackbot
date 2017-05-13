@@ -43,3 +43,5 @@ def reply_test(message, title, overview, level, date):
             default_message = 'タスク一覧か完了済みタスク一覧に「 *' + data[1] + '* 」って言う同じタイトル' \
                               'のタスクが存在するよ？おっちょこちょいのリトルデーモンだね :grin: \n'
             message.reply(default_message)
+
+connection.close()
