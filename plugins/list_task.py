@@ -23,5 +23,4 @@ def task_list(message):
             msg += (">*" + str(value[1]) + "* (" + str(value[4]) + "まで)\n")
 
         message.reply(str(msg))
-
-connection.close()
+        connection.close()

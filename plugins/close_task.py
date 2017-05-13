@@ -18,9 +18,9 @@ def close_task(message, title):
         data = cursor.fetchone()
         if data is None:
             message.reply("そんなタスクないよ!!")
+            connection.close()
         else:
             cursor.execute("UPDATE Task SET status ='off' WHERE username ='yudai' AND title ='" + title + "'")
             connection.commit()
             message.reply("タスクを閉じたよ!!")
-
-connection.close()
+            connection.close()
